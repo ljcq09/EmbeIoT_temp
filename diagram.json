@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "Lenin Cruz, Salvador Trujillo",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-mini", "id": "bb1", "top": 267.4, "left": -2.4, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -105, "left": -29.4, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 236.2,
+      "left": 183.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 296.3, "left": -86.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "servo1:GND", "uno:GND.2", "#8f4814", [ "v-96", "h-138.3" ] ],
+    [ "servo1:V+", "uno:5V", "red", [ "h-0.1", "v-86.4", "h-138.2" ] ],
+    [ "servo1:PWM", "uno:3", "orange", [ "h-0.2", "v-335.8", "h-61.6" ] ],
+    [ "pot1:VCC", "uno:IOREF", "red", [ "v28.8", "h248.8", "v-259.2", "h-109.6" ] ],
+    [ "bb1:10t.a", "uno:4", "green", [ "v-172.8", "h-144", "v-230.4", "h240" ] ],
+    [ "bb1:3t.a", "uno:5", "#8f4814", [ "v-163.2", "h-86.4", "v-249.6", "h236.2" ] ],
+    [ "pot1:SIG", "uno:A5", "blue", [ "v38.4", "h268.4" ] ],
+    [ "bb1:5b.j", "bb1:8b.j", "black", [ "v0" ] ],
+    [ "pot1:GND", "uno:GND.3", "black", [ "v19.2", "h249.6" ] ]
+  ],
+  "dependencies": {}
+}

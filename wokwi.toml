@@ -1,0 +1,4 @@
+[wokwi]
+version=1
+firmware='build/EmbeIoT_temp.ino.hex'
+elf='build/EmbeIoT_temp.ino.elf'
